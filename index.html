@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CBTis 205 - Registro/Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="img.jpeg" alt="CBTis 205" class="logo">
+    <h1>Bienvenido al CBTis 205</h1>
+
+    <div class="form-toggle">
+      <button onclick="showForm('login')">Iniciar Sesión</button>
+      <button onclick="showForm('register')">Registrarse</button>
+    </div>
+
+    <form id="loginForm" class="form" action="login.php" method="POST">
+      <input type="text" name="username" placeholder="Usuario" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+    </form>
+
+    <form id="registerForm" class="form hidden" action="register.php" method="POST">
+      <input type="text" name="username" placeholder="Usuario" required>
+      <input type="email" name="email" placeholder="Correo" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+</body>
+</html>
